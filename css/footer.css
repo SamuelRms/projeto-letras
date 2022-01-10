@@ -1,0 +1,45 @@
+.footer-grid {
+  grid-column: -1/1;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 0 2rem;
+}
+.footer-contato {
+  grid-column: 1;
+}
+.footer-rede-letras {
+  grid-column: 3;
+}
+.footer-redes-autor {
+  grid-column: 2;
+}
+.footer-contato {
+  margin-left: 3rem;
+}
+.footer-contato ul {
+  margin: 0.5rem;
+}
+.footer-contato li {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.footer-contato li::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background: #1d1d1d;
+  margin-right: 10px;
+}
+.footer-copy {
+  grid-column: -1/1;
+  display: flex;
+  justify-content: flex-end;
+  color: #fff;
+  background: #1d1d1d;
+  padding: 2rem;
+  margin: 3rem 0 1.5rem 1rem;
+  border-radius: 6px 0 0 6px;
+  font-size: 1.35rem;
+}
