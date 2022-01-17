@@ -3,3 +3,8 @@
 @import './css/main.css';
 @import './css/header.css';
 @import './css/displaygrid.css';
+
+/* Responsive */
+@import './css/responsive/header-responsive.css';
+@import './css/responsive/main-responsive.css';
+@import './css/responsive/footer-responsive.css';

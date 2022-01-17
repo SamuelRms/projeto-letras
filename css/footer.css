@@ -1,11 +1,13 @@
 .footer-grid {
-  grid-column: -1/1;
+  grid-column: 1/-1;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 2fr 1fr 2fr;
+  gap: 0 5rem;
 }
 .footer-redes-autor {
   grid-column: 1;
   display: flex;
+  flex: 1;
   flex-direction: column;
   margin-left: 1rem;
   padding-top: 1rem;
@@ -25,12 +27,13 @@
 .footer-redes-autor li img:hover,
 .footer-rede-letras li img:hover {
   background: yellow;
+  transition: 0.6s;
   border-radius: 10px;
 }
 .footer-contato {
   grid-column: 2;
-  margin: 0 10rem 0 10rem;
   display: flex;
+
   flex-direction: column;
   text-align: center;
   align-items: center;
@@ -38,6 +41,7 @@
   color: #fff;
   padding: 1rem;
   border-radius: 6px;
+  box-shadow: 5px 10px 15px 0px #696969;
 }
 .footer-contato ul {
   margin: 3rem;
@@ -58,6 +62,7 @@
 .footer-rede-letras {
   grid-column: 3;
   display: flex;
+  flex: 1;
   flex-direction: column;
   text-align: end;
   margin-right: 1rem;
@@ -75,13 +80,17 @@
   padding: 0.3rem;
 }
 .footer-copy {
-  grid-column: -1/1;
+  grid-column: 1/-1;
   display: flex;
   justify-content: flex-end;
   color: #fff;
   background: #1d1d1d;
-  padding: 2rem;
+  padding: 2rem 0 2rem 0;
   margin: 3rem 0 1.5rem 1rem;
   border-radius: 6px 0 0 6px;
   font-size: 1.35rem;
+  box-shadow: 5px 10px 15px 0px #696969;
+}
+.footer-copy p {
+  margin-right: 2rem;
 }

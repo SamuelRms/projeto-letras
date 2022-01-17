@@ -1,0 +1,55 @@
+@media (max-width: 800px) {
+  .footer-grid {
+    gap: 0px;
+  }
+  .footer-redes-autor,
+  .footer-rede-letras {
+    font-size: 80%;
+  }
+  .footer-redes-autor {
+    margin-right: 1rem;
+  }
+  .footer-redes-autor h2 {
+    display: flex;
+  }
+  .footer-redes-autor ul {
+    flex: 0.75;
+    flex-wrap: wrap;
+  }
+  .footer-rede-letras {
+    margin-left: 1rem;
+    margin-right: 2rem;
+  }
+  .footer-rede-letras ul {
+    margin: 2rem 0 0 0;
+  }
+  .footer-redes-autor li img {
+    display: block;
+    max-width: 130%;
+    width: 4rem;
+    height: 4rem;
+  }
+}
+@media (max-width: 600px) {
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+  .footer-redes-autor {
+    margin-top: 2rem;
+    grid-row: 2;
+  }
+  .footer-contato {
+    grid-column: -1/1;
+    grid-row: 1;
+  }
+  .footer-rede-letras {
+    margin-top: 2rem;
+    grid-column: 2;
+    grid-row: 2;
+    margin-right: 1rem;
+    align-items: flex-end;
+    margin-left: 0;
+  }
+}
